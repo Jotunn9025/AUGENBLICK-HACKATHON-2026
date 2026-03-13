@@ -1,0 +1,48 @@
+hello world
+the quick brown fox jumps over the lazy dog
+tokenization is important for natural language processing
+machine learning models need good tokenizers
+subword segmentation helps with rare words
+नमस्ते दुनिया
+यह एक परीक्षण वाक्य है
+हिन्दी भाषा में टोकनाइजेशन
+भारत एक विशाल देश है
+मशीन लर्निंग मॉडल के लिए टोकनाइज़र
+नमस्कार जग
+मराठी भाषेत टोकनायझेशन
+हे एक चाचणी वाक्य आहे
+hello नमस्ते world दुनिया
+BPE tokenizer for Hindi हिन्दी
+Devanagari script नागरी लिपि
+hello world
+the quick brown fox jumps over the lazy dog
+tokenization is important for natural language processing
+machine learning models need good tokenizers
+subword segmentation helps with rare words
+नमस्ते दुनिया
+यह एक परीक्षण वाक्य है
+हिन्दी भाषा में टोकनाइजेशन
+भारत एक विशाल देश है
+मशीन लर्निंग मॉडल के लिए टोकनाइज़र
+नमस्कार जग
+मराठी भाषेत टोकनायझेशन
+हे एक चाचणी वाक्य आहे
+hello नमस्ते world दुनिया
+BPE tokenizer for Hindi हिन्दी
+Devanagari script नागरी लिपि
+hello world
+the quick brown fox jumps over the lazy dog
+tokenization is important for natural language processing
+machine learning models need good tokenizers
+subword segmentation helps with rare words
+नमस्ते दुनिया
+यह एक परीक्षण वाक्य है
+हिन्दी भाषा में टोकनाइजेशन
+भारत एक विशाल देश है
+मशीन लर्निंग मॉडल के लिए टोकनाइज़र
+नमस्कार जग
+मराठी भाषेत टोकनायझेशन
+हे एक चाचणी वाक्य आहे
+hello नमस्ते world दुनिया
+BPE tokenizer for Hindi हिन्दी
+Devanagari script नागरी लिपि

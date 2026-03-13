@@ -1,11 +1,10 @@
-output_dir: ./artifacts/unknown
+output_dir: ./artifacts/nfkc
 corpus:
-  - corpus.txt
+  - nfcvsnfkc.txt
 tokenizer:
   schema_version: "1"
   normalizer:
-    type: devanagari
-    nfc_first: true
+    type: nfkc
     strip_zero_width: true
   pretokenizer:
     type: whitespace

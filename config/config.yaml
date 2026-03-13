@@ -1,0 +1,24 @@
+output_dir: ./artifacts/main
+corpus:
+  - corpus.txt
+tokenizer:
+  add_bos: true
+  add_eos: true
+  schema_version: "1"
+  normalizer:
+    type: devanagari
+    nfc_first: true
+    strip_zero_width: true
+  pretokenizer:
+    type: whitespace
+  model:
+    type: bpe
+    vocab_size: 8000
+  trainer:
+    type: bpe
+    vocab_size: 8000
+    min_frequency: 2
+    special_tokens: 
+      - "<unk>"
+      - "<s>"
+      - "</s>"
