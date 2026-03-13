@@ -1,4 +1,4 @@
-output_dir: ./artifacts/unknown
+output_dir: ./artifacts/unigram2
 corpus:
   - corpus.txt
 tokenizer:
@@ -10,11 +10,10 @@ tokenizer:
   pretokenizer:
     type: whitespace
   model:
-    type: bpe
+    type: unigram
     vocab_size: 8000
   trainer:
-    type: bpe
+    type: unigram
     vocab_size: 8000
-    min_frequency: 2
     special_tokens: 
       - "<unk>"

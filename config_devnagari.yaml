@@ -8,7 +8,13 @@ tokenizer:
     nfc_first: true
     strip_zero_width: true
   pretokenizer:
-    type: whitespace
+    type: sequence
+    pretokenizers:
+      - type: devanagari_aware
+        split_on_whitespace: false
+        split_on_script_boundary: true
+      - type: punctuation
+        behavior: isolated
   model:
     type: bpe
     vocab_size: 8000

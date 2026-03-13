@@ -1,400 +1,90 @@
-hello world
-the quick brown fox jumps over the lazy dog
-tokenization is important for natural language processing
-machine learning models need good tokenizers
-subword segmentation helps with rare words
-नमस्ते दुनिया
-यह एक परीक्षण वाक्य है
-हिन्दी भाषा में टोकनाइजेशन
-भारत एक विशाल देश है
-मशीन लर्निंग मॉडल के लिए टोकनाइज़र
-नमस्कार जग
-मराठी भाषेत टोकनायझेशन
-हे एक चाचणी वाक्य आहे
-hello नमस्ते world दुनिया
-BPE tokenizer for Hindi हिन्दी
-Devanagari script नागरी लिपि
-hello world
-the quick brown fox jumps over the lazy dog
-tokenization is important for natural language processing
-machine learning models need good tokenizers
-subword segmentation helps with rare words
-नमस्ते दुनिया
-यह एक परीक्षण वाक्य है
-हिन्दी भाषा में टोकनाइजेशन
-भारत एक विशाल देश है
-मशीन लर्निंग मॉडल के लिए टोकनाइज़र
-नमस्कार जग
-मराठी भाषेत टोकनायझेशन
-हे एक चाचणी वाक्य आहे
-hello नमस्ते world दुनिया
-BPE tokenizer for Hindi हिन्दी
-Devanagari script नागरी लिपि
-hello world
-the quick brown fox jumps over the lazy dog
-tokenization is important for natural language processing
-machine learning models need good tokenizers
-subword segmentation helps with rare words
-नमस्ते दुनिया
-यह एक परीक्षण वाक्य है
-हिन्दी भाषा में टोकनाइजेशन
-भारत एक विशाल देश है
-मशीन लर्निंग मॉडल के लिए टोकनाइज़र
-नमस्कार जग
-मराठी भाषेत टोकनायझेशन
-हे एक चाचणी वाक्य आहे
-hello नमस्ते world दुनिया
-BPE tokenizer for Hindi हिन्दी
-Devanagari script नागरी लिपि
-hello world
-the quick brown fox jumps over the lazy dog
-tokenization is important for natural language processing
-machine learning models need good tokenizers
-subword segmentation helps with rare words
-नमस्ते दुनिया
-यह एक परीक्षण वाक्य है
-हिन्दी भाषा में टोकनाइजेशन
-भारत एक विशाल देश है
-मशीन लर्निंग मॉडल के लिए टोकनाइज़र
-नमस्कार जग
-मराठी भाषेत टोकनायझेशन
-हे एक चाचणी वाक्य आहे
-hello नमस्ते world दुनिया
-BPE tokenizer for Hindi हिन्दी
-Devanagari script नागरी लिपि
-hello world
-the quick brown fox jumps over the lazy dog
-tokenization is important for natural language processing
-machine learning models need good tokenizers
-subword segmentation helps with rare words
-नमस्ते दुनिया
-यह एक परीक्षण वाक्य है
-हिन्दी भाषा में टोकनाइजेशन
-भारत एक विशाल देश है
-मशीन लर्निंग मॉडल के लिए टोकनाइज़र
-नमस्कार जग
-मराठी भाषेत टोकनायझेशन
-हे एक चाचणी वाक्य आहे
-hello नमस्ते world दुनिया
-BPE tokenizer for Hindi हिन्दी
-Devanagari script नागरी लिपि
-hello world
-the quick brown fox jumps over the lazy dog
-tokenization is important for natural language processing
-machine learning models need good tokenizers
-subword segmentation helps with rare words
-नमस्ते दुनिया
-यह एक परीक्षण वाक्य है
-हिन्दी भाषा में टोकनाइजेशन
-भारत एक विशाल देश है
-मशीन लर्निंग मॉडल के लिए टोकनाइज़र
-नमस्कार जग
-मराठी भाषेत टोकनायझेशन
-हे एक चाचणी वाक्य आहे
-hello नमस्ते world दुनिया
-BPE tokenizer for Hindi हिन्दी
-Devanagari script नागरी लिपि
-hello world
-the quick brown fox jumps over the lazy dog
-tokenization is important for natural language processing
-machine learning models need good tokenizers
-subword segmentation helps with rare words
-नमस्ते दुनिया
-यह एक परीक्षण वाक्य है
-हिन्दी भाषा में टोकनाइजेशन
-भारत एक विशाल देश है
-मशीन लर्निंग मॉडल के लिए टोकनाइज़र
-नमस्कार जग
-मराठी भाषेत टोकनायझेशन
-हे एक चाचणी वाक्य आहे
-hello नमस्ते world दुनिया
-BPE tokenizer for Hindi हिन्दी
-Devanagari script नागरी लिपि
-hello world
-the quick brown fox jumps over the lazy dog
-tokenization is important for natural language processing
-machine learning models need good tokenizers
-subword segmentation helps with rare words
-नमस्ते दुनिया
-यह एक परीक्षण वाक्य है
-हिन्दी भाषा में टोकनाइजेशन
-भारत एक विशाल देश है
-मशीन लर्निंग मॉडल के लिए टोकनाइज़र
-नमस्कार जग
-मराठी भाषेत टोकनायझेशन
-हे एक चाचणी वाक्य आहे
-hello नमस्ते world दुनिया
-BPE tokenizer for Hindi हिन्दी
-Devanagari script नागरी लिपि
-hello world
-the quick brown fox jumps over the lazy dog
-tokenization is important for natural language processing
-machine learning models need good tokenizers
-subword segmentation helps with rare words
-नमस्ते दुनिया
-यह एक परीक्षण वाक्य है
-हिन्दी भाषा में टोकनाइजेशन
-भारत एक विशाल देश है
-मशीन लर्निंग मॉडल के लिए टोकनाइज़र
-नमस्कार जग
-मराठी भाषेत टोकनायझेशन
-हे एक चाचणी वाक्य आहे
-hello नमस्ते world दुनिया
-BPE tokenizer for Hindi हिन्दी
-Devanagari script नागरी लिपि
-hello world
-the quick brown fox jumps over the lazy dog
-tokenization is important for natural language processing
-machine learning models need good tokenizers
-subword segmentation helps with rare words
-नमस्ते दुनिया
-यह एक परीक्षण वाक्य है
-हिन्दी भाषा में टोकनाइजेशन
-भारत एक विशाल देश है
-मशीन लर्निंग मॉडल के लिए टोकनाइज़र
-नमस्कार जग
-मराठी भाषेत टोकनायझेशन
-हे एक चाचणी वाक्य आहे
-hello नमस्ते world दुनिया
-BPE tokenizer for Hindi हिन्दी
-Devanagari script नागरी लिपि
-hello world
-the quick brown fox jumps over the lazy dog
-tokenization is important for natural language processing
-machine learning models need good tokenizers
-subword segmentation helps with rare words
-नमस्ते दुनिया
-यह एक परीक्षण वाक्य है
-हिन्दी भाषा में टोकनाइजेशन
-भारत एक विशाल देश है
-मशीन लर्निंग मॉडल के लिए टोकनाइज़र
-नमस्कार जग
-मराठी भाषेत टोकनायझेशन
-हे एक चाचणी वाक्य आहे
-hello नमस्ते world दुनिया
-BPE tokenizer for Hindi हिन्दी
-Devanagari script नागरी लिपि
-hello world
-the quick brown fox jumps over the lazy dog
-tokenization is important for natural language processing
-machine learning models need good tokenizers
-subword segmentation helps with rare words
-नमस्ते दुनिया
-यह एक परीक्षण वाक्य है
-हिन्दी भाषा में टोकनाइजेशन
-भारत एक विशाल देश है
-मशीन लर्निंग मॉडल के लिए टोकनाइज़र
-नमस्कार जग
-मराठी भाषेत टोकनायझेशन
-हे एक चाचणी वाक्य आहे
-hello नमस्ते world दुनिया
-BPE tokenizer for Hindi हिन्दी
-Devanagari script नागरी लिपि
-hello world
-the quick brown fox jumps over the lazy dog
-tokenization is important for natural language processing
-machine learning models need good tokenizers
-subword segmentation helps with rare words
-नमस्ते दुनिया
-यह एक परीक्षण वाक्य है
-हिन्दी भाषा में टोकनाइजेशन
-भारत एक विशाल देश है
-मशीन लर्निंग मॉडल के लिए टोकनाइज़र
-नमस्कार जग
-मराठी भाषेत टोकनायझेशन
-हे एक चाचणी वाक्य आहे
-hello नमस्ते world दुनिया
-BPE tokenizer for Hindi हिन्दी
-Devanagari script नागरी लिपि
-hello world
-the quick brown fox jumps over the lazy dog
-tokenization is important for natural language processing
-machine learning models need good tokenizers
-subword segmentation helps with rare words
-नमस्ते दुनिया
-यह एक परीक्षण वाक्य है
-हिन्दी भाषा में टोकनाइजेशन
-भारत एक विशाल देश है
-मशीन लर्निंग मॉडल के लिए टोकनाइज़र
-नमस्कार जग
-मराठी भाषेत टोकनायझेशन
-हे एक चाचणी वाक्य आहे
-hello नमस्ते world दुनिया
-BPE tokenizer for Hindi हिन्दी
-Devanagari script नागरी लिपि
-hello world
-the quick brown fox jumps over the lazy dog
-tokenization is important for natural language processing
-machine learning models need good tokenizers
-subword segmentation helps with rare words
-नमस्ते दुनिया
-यह एक परीक्षण वाक्य है
-हिन्दी भाषा में टोकनाइजेशन
-भारत एक विशाल देश है
-मशीन लर्निंग मॉडल के लिए टोकनाइज़र
-नमस्कार जग
-मराठी भाषेत टोकनायझेशन
-हे एक चाचणी वाक्य आहे
-hello नमस्ते world दुनिया
-BPE tokenizer for Hindi हिन्दी
-Devanagari script नागरी लिपि
-hello world
-the quick brown fox jumps over the lazy dog
-tokenization is important for natural language processing
-machine learning models need good tokenizers
-subword segmentation helps with rare words
-नमस्ते दुनिया
-यह एक परीक्षण वाक्य है
-हिन्दी भाषा में टोकनाइजेशन
-भारत एक विशाल देश है
-मशीन लर्निंग मॉडल के लिए टोकनाइज़र
-नमस्कार जग
-मराठी भाषेत टोकनायझेशन
-हे एक चाचणी वाक्य आहे
-hello नमस्ते world दुनिया
-BPE tokenizer for Hindi हिन्दी
-Devanagari script नागरी लिपि
-hello world
-the quick brown fox jumps over the lazy dog
-tokenization is important for natural language processing
-machine learning models need good tokenizers
-subword segmentation helps with rare words
-नमस्ते दुनिया
-यह एक परीक्षण वाक्य है
-हिन्दी भाषा में टोकनाइजेशन
-भारत एक विशाल देश है
-मशीन लर्निंग मॉडल के लिए टोकनाइज़र
-नमस्कार जग
-मराठी भाषेत टोकनायझेशन
-हे एक चाचणी वाक्य आहे
-hello नमस्ते world दुनिया
-BPE tokenizer for Hindi हिन्दी
-Devanagari script नागरी लिपि
-hello world
-the quick brown fox jumps over the lazy dog
-tokenization is important for natural language processing
-machine learning models need good tokenizers
-subword segmentation helps with rare words
-नमस्ते दुनिया
-यह एक परीक्षण वाक्य है
-हिन्दी भाषा में टोकनाइजेशन
-भारत एक विशाल देश है
-मशीन लर्निंग मॉडल के लिए टोकनाइज़र
-नमस्कार जग
-मराठी भाषेत टोकनायझेशन
-हे एक चाचणी वाक्य आहे
-hello नमस्ते world दुनिया
-BPE tokenizer for Hindi हिन्दी
-Devanagari script नागरी लिपि
-hello world
-the quick brown fox jumps over the lazy dog
-tokenization is important for natural language processing
-machine learning models need good tokenizers
-subword segmentation helps with rare words
-नमस्ते दुनिया
-यह एक परीक्षण वाक्य है
-हिन्दी भाषा में टोकनाइजेशन
-भारत एक विशाल देश है
-मशीन लर्निंग मॉडल के लिए टोकनाइज़र
-नमस्कार जग
-मराठी भाषेत टोकनायझेशन
-हे एक चाचणी वाक्य आहे
-hello नमस्ते world दुनिया
-BPE tokenizer for Hindi हिन्दी
-Devanagari script नागरी लिपि
-hello world
-the quick brown fox jumps over the lazy dog
-tokenization is important for natural language processing
-machine learning models need good tokenizers
-subword segmentation helps with rare words
-नमस्ते दुनिया
-यह एक परीक्षण वाक्य है
-हिन्दी भाषा में टोकनाइजेशन
-भारत एक विशाल देश है
-मशीन लर्निंग मॉडल के लिए टोकनाइज़र
-नमस्कार जग
-मराठी भाषेत टोकनायझेशन
-हे एक चाचणी वाक्य आहे
-hello नमस्ते world दुनिया
-BPE tokenizer for Hindi हिन्दी
-Devanagari script नागरी लिपि
-hello world
-the quick brown fox jumps over the lazy dog
-tokenization is important for natural language processing
-machine learning models need good tokenizers
-subword segmentation helps with rare words
-नमस्ते दुनिया
-यह एक परीक्षण वाक्य है
-हिन्दी भाषा में टोकनाइजेशन
-भारत एक विशाल देश है
-मशीन लर्निंग मॉडल के लिए टोकनाइज़र
-नमस्कार जग
-मराठी भाषेत टोकनायझेशन
-हे एक चाचणी वाक्य आहे
-hello नमस्ते world दुनिया
-BPE tokenizer for Hindi हिन्दी
-Devanagari script नागरी लिपि
-hello world
-the quick brown fox jumps over the lazy dog
-tokenization is important for natural language processing
-machine learning models need good tokenizers
-subword segmentation helps with rare words
-नमस्ते दुनिया
-यह एक परीक्षण वाक्य है
-हिन्दी भाषा में टोकनाइजेशन
-भारत एक विशाल देश है
-मशीन लर्निंग मॉडल के लिए टोकनाइज़र
-नमस्कार जग
-मराठी भाषेत टोकनायझेशन
-हे एक चाचणी वाक्य आहे
-hello नमस्ते world दुनिया
-BPE tokenizer for Hindi हिन्दी
-Devanagari script नागरी लिपि
-hello world
-the quick brown fox jumps over the lazy dog
-tokenization is important for natural language processing
-machine learning models need good tokenizers
-subword segmentation helps with rare words
-नमस्ते दुनिया
-यह एक परीक्षण वाक्य है
-हिन्दी भाषा में टोकनाइजेशन
-भारत एक विशाल देश है
-मशीन लर्निंग मॉडल के लिए टोकनाइज़र
-नमस्कार जग
-मराठी भाषेत टोकनायझेशन
-हे एक चाचणी वाक्य आहे
-hello नमस्ते world दुनिया
-BPE tokenizer for Hindi हिन्दी
-Devanagari script नागरी लिपि
-hello world
-the quick brown fox jumps over the lazy dog
-tokenization is important for natural language processing
-machine learning models need good tokenizers
-subword segmentation helps with rare words
-नमस्ते दुनिया
-यह एक परीक्षण वाक्य है
-हिन्दी भाषा में टोकनाइजेशन
-भारत एक विशाल देश है
-मशीन लर्निंग मॉडल के लिए टोकनाइज़र
-नमस्कार जग
-मराठी भाषेत टोकनायझेशन
-हे एक चाचणी वाक्य आहे
-hello नमस्ते world दुनिया
-BPE tokenizer for Hindi हिन्दी
-Devanagari script नागरी लिपि
-hello world
-the quick brown fox jumps over the lazy dog
-tokenization is important for natural language processing
-machine learning models need good tokenizers
-subword segmentation helps with rare words
-नमस्ते दुनिया
-यह एक परीक्षण वाक्य है
-हिन्दी भाषा में टोकनाइजेशन
-भारत एक विशाल देश है
-मशीन लर्निंग मॉडल के लिए टोकनाइज़र
-नमस्कार जग
-मराठी भाषेत टोकनायझेशन
-हे एक चाचणी वाक्य आहे
-hello नमस्ते world दुनिया
-BPE tokenizer for Hindi हिन्दी
-Devanagari script नागरी लिपि
+Hello how are you doing today
+This is a simple multilingual corpus example
+Natural language processing is very interesting
+We are generating text data for training
+The weather is nice and pleasant today
+I enjoy learning new languages
+Artificial intelligence is changing the world
+This dataset contains multiple languages
+Hello how are you doing today
+This is a simple multilingual corpus example
+Natural language processing is very interesting
+We are generating text data for training
+The weather is nice and pleasant today
+I enjoy learning new languages
+Artificial intelligence is changing the world
+This dataset contains multiple languages
+Hello how are you doing today
+This is a simple multilingual corpus example
+Natural language processing is very interesting
+We are generating text data for training
+The weather is nice and pleasant today
+I enjoy learning new languages
+Artificial intelligence is changing the world
+This dataset contains multiple languages
+Stay positive and keep moving forward.
+Every day is a new opportunity.
+Small steps lead to big results.
+Believe in yourself and your abilities.
+Hard work always pays off in the end.
+Kindness can change someone's day.
+Learning never stops in life.
+Patience makes difficult things easier.
+Dream big and work for it.
+Success comes from consistency.
+Life is full of possibilities.
+Your mindset shapes your future.
+Keep going even when it's tough.
+Challenges help us grow stronger.
+Focus on progress, not perfection.
+Good things take time.
+Be grateful for the little things.
+Your effort matters.
+Stay curious and keep exploring.
+Every moment is a chance to improve.Stay positive and keep moving forward.
+Every day is a new opportunity.
+Small steps lead to big results.
+Believe in yourself and your abilities.
+Hard work always pays off in the end.
+Kindness can change someone's day.
+Learning never stops in life.
+Patience makes difficult things easier.
+Dream big and work for it.
+Success comes from consistency.
+Life is full of possibilities.
+Your mindset shapes your future.
+Keep going even when it's tough.
+Challenges help us grow stronger.
+Focus on progress, not perfection.
+Good things take time.
+Be grateful for the little things.
+Your effort matters.
+Stay curious and keep exploring.
+Every moment is a chance to improve.Stay positive and keep moving forward.
+Every day is a new opportunity.
+Small steps lead to big results.
+Believe in yourself and your abilities.
+Hard work always pays off in the end.
+Kindness can change someone's day.
+Learning never stops in life.
+Patience makes difficult things easier.
+Dream big and work for it.
+Success comes from consistency.
+Life is full of possibilities.
+Your mindset shapes your future.
+Keep going even when it's tough.
+Challenges help us grow stronger.
+Focus on progress, not perfection.
+Good things take time.
+Be grateful for the little things.
+Your effort matters.
+Stay curious and keep exploring.
+Every moment is a chance to improve.
+जन गण मन अधिनायक जय हे भारत भाग्य विधाता पंजाब सिंधु...
+जन गण मन अधिनायक जय हे भारत भाग्य विधाता पंजाब सिंधु...
+जन गण मन अधिनायक जय हे भारत भाग्य विधाता पंजाब सिंधु...
+जन गण मन अधिनायक जय हे भारत भाग्य विधाता पंजाब सिंधु...
+Jana Gana Mana Adhinayaka Jaya He Bharata Bhagya Vidhata Punjab Sindhu...
+Jana Gana Mana Adhinayaka Jaya He Bharata Bhagya Vidhata Punjab Sindhu...
+Jana Gana Mana Adhinayaka Jaya He Bharata Bhagya Vidhata Punjab Sindhu...
+Jana Gana Mana Adhinayaka Jaya He Bharata Bhagya Vidhata Punjab Sindhu...

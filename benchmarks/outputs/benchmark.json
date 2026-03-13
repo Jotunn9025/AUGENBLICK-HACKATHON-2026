@@ -1,15 +1,15 @@
 [
   {
-    "tokenizer_name": "bpe2",
+    "tokenizer_name": "task3",
     "language": "",
-    "n_sentences": 400,
-    "throughput_sps": 29477.61,
-    "mean_tokens_per_sentence": 4.6875,
-    "fertility": 1.0,
+    "n_sentences": 90,
+    "throughput_sps": 13396.38,
+    "mean_tokens_per_sentence": 6.2111,
+    "fertility": 1.0036,
     "unk_rate": 0.0,
     "round_trip_success_rate": 1.0,
-    "normalized_seq_length_ratio": 0.1749,
-    "elapsed_seconds": 0.0136,
+    "normalized_seq_length_ratio": 0.1674,
+    "elapsed_seconds": 0.0067,
     "extra": {}
   }
 ]
