@@ -29,6 +29,7 @@ dependencies = [
   "tqdm>=4.66",
   "numpy>=1.26",
   "PyYAML>=6.0",
+  "pytest>=9.0.2",
 ]
 
 [project.optional-dependencies]
