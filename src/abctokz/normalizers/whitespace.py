@@ -45,3 +45,4 @@ class WhitespaceNormalizer(Normalizer):
         if self._strip:
             text = text.strip()
         return text
+    

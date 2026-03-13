@@ -11,18 +11,17 @@ def build_pretokenizer(config: Literal[WhitespacePreTokenizerConfig, Punctuation
     Factory function to instantiate the correct normalizer 
     based on the provided configuration.
     """
+    if isinstance(config, WhitespacePreTokenizerConfig):
+        return WhitespacePreTokenizer()
+    if isinstance(config, PunctuationPreTokenizerConfig):
+        return PunctuationPreTokenizer(behavior=config.behavior)
+    if isinstance(config, RegexPreTokenizerConfig):
+        return RegexPreTokenizer(pattern=config.pattern, invert=config.invert)
     if isinstance(config, DevanagariAwarePreTokenizerConfig):
-        return DevanagariAwarePreTokenizer(config)
-    elif isinstance(config, PunctuationPreTokenizerConfig):
-        return PunctuationPreTokenizer(config)
-    elif isinstance(config, WhitespacePreTokenizerConfig):
-        return WhitespacePreTokenizer(config)
-    elif isinstance(config, RegexPreTokenizerConfig):
-        return RegexPreTokenizer(config)
-    elif isinstance(config, SequencePreTokenizerConfig):
-        return SequencePreTokenizer(
-            pretokenizers=[build_pretokenizer(norm) for norm in config.pretokenizers]
+        return DevanagariAwarePreTokenizer(
+            split_on_whitespace=config.split_on_whitespace,
+            split_on_script_boundary=config.split_on_script_boundary,
         )
-    else:
-        raise ValueError(f"Unsupported pretokenizer config type: {type(config)}")
-
+    if isinstance(config, SequencePreTokenizerConfig):
+        return SequencePreTokenizer([build_pretokenizer(c) for c in config.pretokenizers])
+    raise ValueError(f"Unknown pre-tokenizer config type: {type(config)}")

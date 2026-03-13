@@ -78,6 +78,8 @@ class AugenblickTokenizer:
         post_processor: Optional[PostProcessor] = None,
         decoder: Optional[Decoder] = None,
         special_tokens: Optional[dict[str, SpecialToken]] = None,
+        config: Optional[TokenizerConfig] = None,
+        trainer: Optional[Trainer] = None,
     ) -> None:
         self._model = model
         self._normalizer = normalizer
@@ -85,6 +87,8 @@ class AugenblickTokenizer:
         self._post_processor = post_processor
         self._decoder = decoder or WordDecoder()
         self._special_tokens: dict[str, SpecialToken] = special_tokens or {}
+        self._config = config
+        self._trainer = trainer
 
     # ------------------------------------------------------------------
     # Encoding
@@ -253,6 +257,11 @@ class AugenblickTokenizer:
         else:
             decoder = SubwordDecoder()
 
+        trainer = None
+        if config.trainer:
+            from abctokz.trainers import build_trainer
+            trainer = build_trainer(config.trainer)
+
         # Return a shell tokenizer; model is set after training
         return cls(
             model=_PlaceholderModel(),  # type: ignore[arg-type]
@@ -260,6 +269,8 @@ class AugenblickTokenizer:
             pretokenizer=pretokenizer,
             post_processor=post_processor,
             decoder=decoder,
+            config=config,
+            trainer=trainer,
         )
 
     def train(self, corpus_paths: list[str], config: TokenizerConfig) -> None:
@@ -286,6 +297,8 @@ class AugenblickTokenizer:
         normalizer = build_normalizer(config.normalizer) if config.normalizer else None
         pretokenizer = build_pretokenizer(config.pretokenizer) if config.pretokenizer else None
 
+        self._trainer = trainer
+
         def _corpus_iter():  # type: ignore[no-untyped-def]
             for path in corpus_paths:
                 with open(path, encoding="utf-8") as fh:
@@ -305,6 +318,8 @@ class AugenblickTokenizer:
             self._decoder = WordDecoder()
         else:
             self._decoder = SubwordDecoder()
+            
+        self._config = config
 
     # ------------------------------------------------------------------
     # Save / Load
@@ -336,9 +351,16 @@ class AugenblickTokenizer:
         save_json(st_data, out / SPECIAL_TOKENS_FILENAME)
 
         # Save config (if available)
-        # We reconstruct a minimal config dict from what we know
         model_type = self._infer_model_type()
-        config_data: dict[str, object] = {"model_type": model_type, "schema_version": SCHEMA_VERSION}
+        if getattr(self, "_config", None) is not None:
+            config_data = self._config.model_dump()
+            if model_type == "unknown":
+                model_type = self._config.model.type
+        else:
+            config_data = {
+                "schema_version": SCHEMA_VERSION,
+                "model": {"type": model_type, "vocab_size": self._model.get_vocab_size()}
+            }
         save_json(config_data, out / CONFIG_FILENAME)
 
         # Save manifest
@@ -406,8 +428,51 @@ class AugenblickTokenizer:
             st_data = load_json(st_path)
             special_tokens = {k: SpecialToken.from_dict(v) for k, v in st_data.items()}
 
+        # Load config and reconstruct pipeline components
+        config_path = p / CONFIG_FILENAME
+        normalizer = None
+        pretokenizer = None
+        post_processor = None
+        trainer = None
+        config = None
+        if config_path.exists():
+            config_data = load_json(config_path)
+            try:
+                config = TokenizerConfig.model_validate(config_data)
+                
+                from abctokz.normalizers import build_normalizer
+                from abctokz.pretokenizers import build_pretokenizer
+                from abctokz.trainers import build_trainer
+                
+                if config.normalizer:
+                    normalizer = build_normalizer(config.normalizer)
+                if config.pretokenizer:
+                    pretokenizer = build_pretokenizer(config.pretokenizer)
+                if config.trainer:
+                    trainer = build_trainer(config.trainer)
+                if config.add_bos or config.add_eos:
+                    bos_id = 1
+                    eos_id = 2
+                    post_processor = SpecialTokensPostProcessor(
+                        bos_token=config.bos_token if config.add_bos else None,
+                        bos_id=bos_id,
+                        eos_token=config.eos_token if config.add_eos else None,
+                        eos_id=eos_id,
+                    )
+            except Exception as e:
+                logger.warning("Could not load full config from config.json: %s", e)
+
         logger.info("Tokenizer loaded from %s (%s, vocab=%d)", path, model_type, meta.vocab_size)
-        return cls(model=model, decoder=decoder, special_tokens=special_tokens)
+        return cls(
+            model=model,
+            normalizer=normalizer,
+            pretokenizer=pretokenizer,
+            post_processor=post_processor,
+            decoder=decoder,
+            special_tokens=special_tokens,
+            config=config,
+            trainer=trainer,
+        )
 
     # ------------------------------------------------------------------
     # Internals

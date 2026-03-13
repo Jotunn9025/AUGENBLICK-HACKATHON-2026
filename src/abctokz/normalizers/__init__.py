@@ -11,18 +11,16 @@ def build_normalizer(config: Literal[DevanagariNormalizerConfig, NfkcNormalizerC
     Factory function to instantiate the correct normalizer 
     based on the provided configuration.
     """
+    if isinstance(config, IdentityNormalizerConfig):
+        return IdentityNormalizer()
+    if isinstance(config, NfkcNormalizerConfig):
+        return NfkcNormalizer(strip_zero_width=config.strip_zero_width)
+    if isinstance(config, WhitespaceNormalizerConfig):
+        return WhitespaceNormalizer(strip=config.strip, collapse=config.collapse)
     if isinstance(config, DevanagariNormalizerConfig):
-        return DevanagariNormalizer(config)
-    elif isinstance(config, NfkcNormalizerConfig):
-        return NfkcNormalizer(config)
-    elif isinstance(config, WhitespaceNormalizerConfig):
-        return WhitespaceNormalizer(config)
-    elif isinstance(config, IdentityNormalizerConfig):
-        return IdentityNormalizer(config)
-    elif isinstance(config, SequenceNormalizerConfig):
-        return SequenceNormalizer(
-            normalizers=[build_normalizer(norm) for norm in config.normalizers]
+        return DevanagariNormalizer(
+            nfc_first=config.nfc_first, strip_zero_width=config.strip_zero_width
         )
-    else:
-        raise ValueError(f"Unsupported normalizer config type: {type(config)}")
-
+    if isinstance(config, SequenceNormalizerConfig):
+        return SequenceNormalizer([build_normalizer(c) for c in config.normalizers])
+    raise ValueError(f"Unknown normalizer config type: {type(config)}")

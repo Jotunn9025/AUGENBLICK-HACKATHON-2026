@@ -34,7 +34,7 @@ CORPUS_LINES = [
     "hello नमस्ते world दुनिया",
     "BPE tokenizer for Hindi हिन्दी",
     "Devanagari script नागरी लिपि",
-] * 30
+] 
 
 
 def main() -> None:

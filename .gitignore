@@ -2,3 +2,5 @@ cpython
 *.pyc
 __pycache__/
 checklist/node_modules/
+artifacts/
+test_output/
