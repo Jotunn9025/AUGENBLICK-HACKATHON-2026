@@ -1,0 +1,15 @@
+[
+  {
+    "tokenizer_name": "bpe2",
+    "language": "",
+    "n_sentences": 400,
+    "throughput_sps": 29477.61,
+    "mean_tokens_per_sentence": 4.6875,
+    "fertility": 1.0,
+    "unk_rate": 0.0,
+    "round_trip_success_rate": 1.0,
+    "normalized_seq_length_ratio": 0.1749,
+    "elapsed_seconds": 0.0136,
+    "extra": {}
+  }
+]

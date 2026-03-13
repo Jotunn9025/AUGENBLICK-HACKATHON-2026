@@ -39,25 +39,26 @@ def _get_pair_freqs(word_freqs: WordFreq) -> PairFreq:
     return pairs
 
 
-def _merge_pair(pair: MergePair, word_freqs: WordFreq) -> WordFreq:
+def _merge_pair(pair: MergePair, word_freqs: WordFreq, merged_token: str) -> WordFreq:
     """Apply one merge rule to all words, returning updated word_freqs.
 
     Args:
         pair: The ``(left, right)`` pair to merge.
         word_freqs: Current word piece frequencies.
+        merged_token: The result token string for the merge (must match
+            the token stored in the merge rules / vocabulary).
 
     Returns:
         Updated word frequencies with the merge applied.
     """
     a, b = pair
-    merged = a + b
     new_freqs: WordFreq = {}
     for word, freq in word_freqs.items():
         new_word: list[str] = []
         i = 0
         while i < len(word):
             if i < len(word) - 1 and word[i] == a and word[i + 1] == b:
-                new_word.append(merged)
+                new_word.append(merged_token)
                 i += 2
             else:
                 new_word.append(word[i])
@@ -175,7 +176,7 @@ class BPETrainer(Trainer):
             merged = best_pair[0] + (b[len(prefix):] if prefix and b.startswith(prefix) else b)
             merge_rules.append((best_pair, merged))
             vocab_set.add(merged)
-            word_freqs = _merge_pair(best_pair, word_freqs)
+            word_freqs = _merge_pair(best_pair, word_freqs, merged)
 
             if step % 500 == 0:
                 logger.debug("BPE step %d/%d: merged %r + %r -> %r", step, target_merges, *best_pair, merged)

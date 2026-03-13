@@ -112,7 +112,9 @@ class MergeTable:
         rules: MergeRules = []
         for line in text.splitlines():
             line = line.strip()
-            if not line or line.startswith("#"):
+            if not line:
+                continue
+            if line.startswith("#") and not line.startswith("##"):
                 continue
             parts = line.split(" ", 2)
             if len(parts) < 3:
